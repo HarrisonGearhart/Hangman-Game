@@ -42,6 +42,8 @@ const displayOptions = () => {
     buttonCon.innerHTML += `<button class="options" onclick="generateWord('${value}')">${value}</button>`;
   }
   optionsContainer.appendChild(buttonCon);
+  
+
 };
 
 //Block all the Buttons
@@ -51,6 +53,7 @@ const blocker = () => {
   //disable all options
   optionsButtons.forEach((button) => {
     button.disabled = true;
+    
   });
 
   //disable all letters
@@ -110,6 +113,15 @@ const initializer = () => {
     button.classList.add("letters");
     //Number to ASCII[A-Z]
     button.innerText = String.fromCharCode(i);
+    button.addEventListener("mouseover", () => {
+      button.style.backgroundColor = "lightblue";
+      button.style.transform = "scale(1.5)";
+    });
+
+    button.addEventListener("mouseout", () => {
+      button.style.backgroundColor = ""
+      button.style.transform = "scale(1)";
+    });
     //character button click
     button.addEventListener("click", () => {
       let charArray = chosenWord.split("");
@@ -238,6 +250,23 @@ const drawMan = (count) => {
       break;
   }
 };
+
+//Event Listeners to highlight buttons
+optionsContainer.addEventListener("mouseover", (event) => {
+  if (event.target.tagName === "BUTTON") {
+    event.target.style.backgroundColor = "lightblue";
+    event.target.style.transform = "scale(1.5)";
+  }
+});
+
+optionsContainer.addEventListener("mouseout", (event) => {
+  if (event.target.tagName === "BUTTON") {
+    event.target.style.backgroundColor = "";
+    event.target.style.transform = "scale(1)";
+  }
+});
+
+
 
 //New Game
 newGameButton.addEventListener("click", initializer);
