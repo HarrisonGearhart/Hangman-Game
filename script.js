@@ -19,12 +19,12 @@ let options = {
   ],
   animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
   countries: [
-    "India",
-    "Hungary",
-    "Kyrgyzstan",
-    "Switzerland",
-    "Zimbabwe",
-    "Dominica",
+    "India too",
+    "Hungary too",
+    "Kyrgyzstan too",
+    "Switzerlandtoo",
+    "Zimbabwe too",
+    "Dominica too",
   ],
 };
 
@@ -55,7 +55,7 @@ const blocker = () => {
 
   //disable all letters
   letterButtons.forEach((button) => {
-    button.disabled.true;
+    button.disabled = true;
   });
   newGameContainer.classList.remove("hide");
 };
@@ -81,7 +81,12 @@ const generateWord = (optionValue) => {
   chosenWord = chosenWord.toUpperCase();
 
   //replace every letter with span containing dash
-  let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
+  let displayItem = chosenWord.split('').map(char => {
+    if (char === ' ') {
+      return '<span class="dashes space"> </span>'; // If it's a space, return a space without the dash
+    }
+    return '<span class="dashes">_</span>'; // Otherwise, return an underscore
+  }).join('');
 
   //Display each element as span
   userInputSection.innerHTML = displayItem;
@@ -109,7 +114,7 @@ const initializer = () => {
     button.addEventListener("click", () => {
       let charArray = chosenWord.split("");
       let dashes = document.getElementsByClassName("dashes");
-      //if array contains clciked value replace the matched dash with letter else dram on canvas
+      //if array contains clicked value replace the matched dash with letter else draw on canvas
       if (charArray.includes(button.innerText)) {
         charArray.forEach((char, index) => {
           //if character in array is same as clicked button
@@ -118,8 +123,8 @@ const initializer = () => {
             dashes[index].innerText = char;
             //increment counter
             winCount += 1;
-            //if winCount equals word lenfth
-            if (winCount == charArray.length) {
+            //if winCount equals the total number of letters (including spaces)
+            if (winCount == chosenWord.replace(/ /g, "").length) {
               resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
               //block all buttons
               blocker();

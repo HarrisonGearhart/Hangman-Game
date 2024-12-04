@@ -117,3 +117,9 @@
   .lose-msg {
     color: #fe5152;
   }
+  .dashes.space {
+    display: inline-block;
+    width: 20px; /* Adjust width as needed */
+    text-align: center;
+  }
+  
