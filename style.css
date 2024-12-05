@@ -29,6 +29,7 @@
   }
   #options-container {
     text-align: center;
+    font-weight: bold;
   }
   #options-container div {
     width: 100%;
