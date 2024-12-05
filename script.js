@@ -1,4 +1,5 @@
 //Initial References
+
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
 const userInputSection = document.getElementById("user-input-section");
@@ -36,7 +37,7 @@ let chosenWord = "";
 
 //Display option buttons
 const displayOptions = () => {
-  optionsContainer.innerHTML += `<h3>Please Select An Option</h3>`;
+  optionsContainer.innerHTML += `<h3>Please<br/>Select<br/>An<br/>Option</h3>`;
   let buttonCon = document.createElement("div");
   for (let value in options) {
     buttonCon.innerHTML += `<button class="options" onclick="generateWord('${value}')">${value}</button>`;
@@ -212,11 +213,11 @@ const canvasCreator = () => {
     //clear canvas
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
     //bottom line
-    drawLine(10, 130, 130, 130);
+    drawLine(10, 130, 80, 130);
     //left line
-    drawLine(10, 10, 10, 131);
+    drawLine(40, 10, 40, 131);
     //top line
-    drawLine(10, 10, 70, 10);
+    drawLine(39, 10, 70, 10);
     //small top line
     drawLine(70, 10, 70, 20);
   };

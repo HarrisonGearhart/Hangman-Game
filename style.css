@@ -1,13 +1,15 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
   body 
     {
       height: 100vh;
-      background-image: linear-gradient(to bottom right, red, yellow);
+      background-image: url(images/map.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   
   .container {
@@ -17,25 +19,30 @@
     background-repeat: no-repeat;
     font-size: 16px;
     background-color: #f8f8f8;
-    width: 90vw;
-    max-width: 34em;
+    width: 100vw;
+    max-width: 50em;
+    height: 30vw;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     padding: 3em;
-    border-radius: 0.6em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
   }
   #options-container {
     text-align: center;
+    margin-top: 80px;
+    margin-right: 395px;
+    font-size: 20px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
   }
   #options-container div {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 1.2em 0 2.4em 0;
+    margin: 0.6em 0 1.2em 0;
   }
   #options-container button {
     padding: 0.6em 1.2em;
@@ -45,6 +52,7 @@
     border-radius: 0.3em;
     text-transform: capitalize;
     cursor: pointer;
+    
   }
   #options-container button:disabled {
     border: 3px solid #808080;
@@ -56,19 +64,24 @@
     border: 3px solid #000000;
     color: #000000;
   }
+  
   .letter-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.6em;
+    margin-top: 135px;
   }
   #letter-container button {
+    position: initial;
     height: 2.4em;
     width: 2.4em;
     border-radius: 0.3em;
     background-color: #ffffff;
     cursor: pointer;
+    line-height: 1.2;
+    margin-top: 10px;
   }
   .new-game-popup {
     background-color: #ffffff;
@@ -86,13 +99,19 @@
   
   #user-input-section {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    justify-content: right;
     font-size: 1.8em;
     margin: 0.6em 0 1.2em 0;
+    top: 65%;
+    left: 65%;
   }
   canvas {
-    display: block;
-    margin: auto;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    margin-right: 20px;
     border: 10px solid #1923e6;
     border-radius: 10px;
   }
