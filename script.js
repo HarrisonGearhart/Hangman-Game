@@ -9,7 +9,7 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-  fruits: [
+  Landmarks: [
     "Apple",
     "Blueberry",
     "Mandarin",
@@ -17,14 +17,37 @@ let options = {
     "Pomegranate",
     "Watermelon",
   ],
-  animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
+  Activities: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
   countries: [
-    "India too",
-    "Hungary too",
-    "Kyrgyzstan too",
-    "Switzerlandtoo",
-    "Zimbabwe too",
-    "Dominica too",
+    "United States",
+    "Egypt",
+    "Spain",
+    "Switzerland",
+    "Japan",
+    "Russia",
+    "Botswana",
+    "Kenya",
+    "Brazil",
+    "Argentina",
+    "Afghanistan",
+    "Indonesia",
+    "Mexico",
+    "Pakistan",
+    "Ukraine",
+    "Vietnam",
+    "United Arab Emirates",
+    "Greece",
+    "Hong Kong",
+    "Serbia",
+    "Puerto Rico",
+    "Uruguay",
+    "Indonesia",
+    "United Kingdom",
+    "France",
+    "Germany",
+    "Thailand",
+    "China",
+    "Italy",
   ],
 };
 
