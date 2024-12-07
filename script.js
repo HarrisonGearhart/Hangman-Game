@@ -140,6 +140,7 @@ const initializer = () => {
             if (winCount == chosenWord.replace(/ /g, "").length) {
               resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
               document.querySelector(".new-game-popup").style.backgroundImage = "url(images/WinScreen1.0.webp)";
+              document.querySelector("body").style.backgroundImage = "url(images/airport.jpg)";
               //block all buttons
               blocker();
               
