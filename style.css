@@ -104,23 +104,22 @@
   
   #user-input-section {
     display: flex;
-    position: fixed;
+    position: absolute;
     justify-content: right;
     font-size: 1.8em;
     margin: 0.6em 0 1.2em 0;
-    top: 65%;
-    left: 65%;
     margin-right: 20px;
-    top: 65%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -0%);
     max-width: calc(100% - 300px);
     left: 75%;
+    top: 70%;
     right: auto;
+
     
   }
   canvas {
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 5%;
     top: 30%;
     margin-right: 20px;
