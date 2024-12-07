@@ -98,6 +98,8 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 0.6em;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   #user-input-section {
@@ -111,7 +113,7 @@
     margin-right: 20px;
     top: 65%;
     transform: translate(-50%, -50%);
-    max-width: calc(100% - 300px); /* Adjust as needed */
+    max-width: calc(100% - 300px);
     left: 75%;
     right: auto;
     
@@ -142,21 +144,21 @@
   #new-game-button {
     font-size: 1.25em;
     padding: 0.5em 1em;
-    background-color: #e52d1d;
+    background-color: #4e86b7;
     border: 3px solid #000000;
     color: #fff;
     border-radius: 0.2em;
     cursor: pointer;
   }
   .win-msg {
-    color: #39d78d;
+    color: #05703e;
   }
   .lose-msg {
-    color: #fe5152;
+    color: #b61212;
   }
   .dashes.space {
     display: inline-block;
-    width: 20px; /* Adjust width as needed */
+    width: 20px;
     text-align: center;
   }
   
