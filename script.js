@@ -1,4 +1,5 @@
 //Initial References
+
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
 const userInputSection = document.getElementById("user-input-section");
@@ -59,7 +60,7 @@ let chosenWord = "";
 
 //Display option buttons
 const displayOptions = () => {
-  optionsContainer.innerHTML += `<h3>Please Select An Option</h3>`;
+  optionsContainer.innerHTML += `<h3>Please Select<br/>An Option</h3>`;
   let buttonCon = document.createElement("div");
   for (let value in options) {
     buttonCon.innerHTML += `<button class="options" onclick="generateWord('${value}')">${value}</button>`;
@@ -161,8 +162,11 @@ const initializer = () => {
             //if winCount equals the total number of letters (including spaces)
             if (winCount == chosenWord.replace(/ /g, "").length) {
               resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+              document.querySelector(".new-game-popup").style.backgroundImage = "url(images/WinScreen1.0.webp)";
+              document.querySelector("body").style.backgroundImage = "url(images/WinBackgroundScreen2.jpeg)";
               //block all buttons
               blocker();
+              
             }
           }
         });
@@ -174,6 +178,8 @@ const initializer = () => {
         //Count==6 because head,body,left arm, right arm,left leg,right leg
         if (count == 6) {
           resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+          document.querySelector(".new-game-popup").style.backgroundImage = "url(images/LoseScreen4.jpeg)";
+          document.querySelector("body").style.backgroundImage = "url(images/LoseBackgroundScreen3.jpeg)";
           blocker();
         }
       }
@@ -235,11 +241,11 @@ const canvasCreator = () => {
     //clear canvas
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
     //bottom line
-    drawLine(10, 130, 130, 130);
+    drawLine(10, 130, 80, 130);
     //left line
-    drawLine(10, 10, 10, 131);
+    drawLine(40, 10, 40, 131);
     //top line
-    drawLine(10, 10, 70, 10);
+    drawLine(39, 10, 70, 10);
     //small top line
     drawLine(70, 10, 70, 20);
   };
@@ -294,3 +300,7 @@ optionsContainer.addEventListener("mouseout", (event) => {
 //New Game
 newGameButton.addEventListener("click", initializer);
 window.onload = initializer;
+newGameButton.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url('images/map.webp')";
+  initializer();
+});
