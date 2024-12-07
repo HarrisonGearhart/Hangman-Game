@@ -140,7 +140,7 @@ const initializer = () => {
             if (winCount == chosenWord.replace(/ /g, "").length) {
               resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
               document.querySelector(".new-game-popup").style.backgroundImage = "url(images/WinScreen1.0.webp)";
-              document.querySelector("body").style.backgroundImage = "url(images/airport.jpg)";
+              document.querySelector("body").style.backgroundImage = "url(images/WinBackgroundScreen2.jpeg)";
               //block all buttons
               blocker();
               
@@ -155,8 +155,8 @@ const initializer = () => {
         //Count==6 because head,body,left arm, right arm,left leg,right leg
         if (count == 6) {
           resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
-          document.querySelector(".new-game-popup").style.backgroundImage = "url(images/LoseScreen1.0.jpeg)";
-          document.querySelector("body").style.backgroundImage = "url(images/airport.jpg)";
+          document.querySelector(".new-game-popup").style.backgroundImage = "url(images/LoseScreen4.jpeg)";
+          document.querySelector("body").style.backgroundImage = "url(images/LoseBackgroundScreen3.jpeg)";
           blocker();
         }
       }
