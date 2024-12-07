@@ -22,7 +22,7 @@
     width: 100vw;
     max-width: 50em;
     height: 30vw;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -32,17 +32,17 @@
   #options-container {
     text-align: center;
     margin-top: 80px;
-    margin-right: 395px;
+    margin-right: 445px;
     font-size: 20px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
   }
   #options-container div {
-    width: 100%;
-    display: flex;
+    width: 75%;
+    display: inline-grid;
     justify-content: space-between;
-    margin: 0.6em 0 1.2em 0;
+    margin: 0.6em 0 1.2em 37%;
   }
   #options-container button {
     padding: 0.6em 1.2em;
@@ -53,6 +53,7 @@
     text-transform: capitalize;
     cursor: pointer;
     margin: 0.3em 0;
+
     
   }
   #options-container button:disabled {
@@ -72,7 +73,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.6em;
-    margin-top: 115px;
+    margin-top: 100px;
+
   }
   #letter-container button {
     position: initial;
@@ -85,7 +87,7 @@
     margin-top: 10px;
   }
   .new-game-popup {
-    background-color: #ffffff;
+    background-color: #1be340;
     position: absolute;
     left: 0;
     top: 0;
@@ -100,17 +102,23 @@
   
   #user-input-section {
     display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: right;
     font-size: 1.8em;
     margin: 0.6em 0 1.2em 0;
     top: 65%;
     left: 65%;
     margin-right: 20px;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 300px); /* Adjust as needed */
+    left: 75%;
+    right: auto;
+    
   }
   canvas {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 5%;
     top: 30%;
     margin-right: 20px;
