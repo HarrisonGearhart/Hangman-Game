@@ -155,6 +155,7 @@ const initializer = () => {
         if (count == 6) {
           resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
           document.querySelector(".new-game-popup").style.backgroundImage = "url(images/LoseScreen1.0.jpeg)";
+          document.querySelector("body").style.backgroundImage = "url(images/airport.jpg)";
           blocker();
         }
       }
@@ -275,3 +276,7 @@ optionsContainer.addEventListener("mouseout", (event) => {
 //New Game
 newGameButton.addEventListener("click", initializer);
 window.onload = initializer;
+newGameButton.addEventListener("click", () => {
+  document.body.style.backgroundImage = "url('images/map.webp')";
+  initializer();
+});
