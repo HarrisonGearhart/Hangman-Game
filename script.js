@@ -139,9 +139,10 @@ const initializer = () => {
             //if winCount equals the total number of letters (including spaces)
             if (winCount == chosenWord.replace(/ /g, "").length) {
               resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+              document.querySelector(".new-game-popup").style.backgroundImage = "url(images/airport.jpg)";
               //block all buttons
               blocker();
-              document.querySelector(".newgamepopup").style.backgroundImage = "url('earlypassport.jpg')";
+              
             }
           }
         });
@@ -153,6 +154,7 @@ const initializer = () => {
         //Count==6 because head,body,left arm, right arm,left leg,right leg
         if (count == 6) {
           resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+          document.querySelector(".new-game-popup").style.backgroundImage = "url(images/earlypassport.jpg)";
           blocker();
         }
       }
