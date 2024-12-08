@@ -14,8 +14,7 @@ Welcome to the **Hangman Game**! This is a fun and interactive game where you pi
 
 ## Features
 - Interactive gameplay
-- Multiple difficulty levels
-- Customizable word lists
+- Multiple different catagories
 - Score tracking
 
 ## Installation
