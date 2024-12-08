@@ -28,7 +28,20 @@ let options = {
     "Christ the Redeemer",
 
   ],
-  Activities: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
+  Activities: [
+    "Hiking",
+    "Fishing",
+    "Painting",
+    "Swimming",
+    "Pottery",
+    "Cycling",
+    "Dancing",
+    "Skiing",
+    "Surfing",
+    "Camping",
+    "Sightseeing",
+  ],
+  
   countries: [
     "United States",
     "Egypt",
