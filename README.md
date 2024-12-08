@@ -23,7 +23,7 @@ To install the Hangman Game, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/Hangman-Game.git
+    git clone https://github.com/HarrisonGearhart/Hangman-Game
     ```
 2. Navigate to the project directory:
     ```bash
