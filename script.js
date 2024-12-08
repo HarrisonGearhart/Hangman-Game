@@ -11,12 +11,22 @@ const resultText = document.getElementById("result-text");
 //Options values for buttons
 let options = {
   Landmarks: [
-    "Apple",
-    "Blueberry",
-    "Mandarin",
-    "Pineapple",
-    "Pomegranate",
-    "Watermelon",
+    "Roman Colosseum",
+    "Grand Canyon",
+    "Hollywood Sign",
+    "Eiffel Tower",
+    "Great Wall of China",
+    "Machu Picchu",
+    "Statue of Liberty",
+    "Taj Mahal",
+    "Niagara Falls",
+    "Washington Monument",
+    "Golden Gate Bridge",
+    "Leaning Tower of Pisa",
+    "Stonehenge",
+    "Pyramids of Giza",
+    "Christ the Redeemer",
+
   ],
   Activities: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
   countries: [
