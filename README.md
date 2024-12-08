@@ -5,7 +5,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributor](#contributors)
+- [Contributors](#contributors)
 - [License](#license)
 - [Contact](#contact)
 
