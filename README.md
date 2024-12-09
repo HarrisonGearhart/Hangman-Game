@@ -7,7 +7,7 @@
 - [Contributors](#contributors)
 
 ## Introduction
-Welcome to the **Hangman Game**! This is a fun and interactive game where you pick a catagory and are given a word. This game is based off of the classic word game, Hangman, but with a travel theme!
+Welcome to the **Hangman Game**! This game is based off of the classic word game, Hangman, but with a travel theme!
 
 ## Features
 - Pick between 3 different travel categories.
