@@ -23,6 +23,6 @@ To play the game, just click [here](https://harrisongearhart.github.io/Hangman-G
 
 
 ## Contributors
-    [Harrison Gearhart](https://github.com/HarrisonGearhart)
-    [Max Logan](https://github.com/)
-    [Clay Sexton](https://github.com/maxnchief)
+[Harrison Gearhart](https://github.com/HarrisonGearhart)
+[Max Logan](https://github.com/)
+[Clay Sexton](https://github.com/maxnchief)
