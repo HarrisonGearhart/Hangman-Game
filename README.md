@@ -3,40 +3,26 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
+- [How to Play](#How to Play)
 - [Contributors](#contributors)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
-Welcome to the **Hangman Game**! This is a fun and interactive game where you pick a catagory and are given a word. clicking letters is how you guess and when the stick figure is finished, that means youre out of attempts.
+Welcome to the **Hangman Game**! This is a fun and interactive game where you pick a catagory and are given a word. This game is based off of the classic word game, Hangman, but with a travel theme!
 
 ## Features
-- Interactive gameplay
-- Multiple different catagories
-- Score tracking
+- Pick between 3 different travel categories.
+- Based off the category selected, a random word will be chosen and each character will be displayed with an underscore.
+- At the same time, a keyboard will appear. This is where you will be guessing each letter of the word.
+- Everytime you guess a letter, the letter will be greyed out, indicating that it has already been guessed.
+- If the letter you pick is correct, the underscore associated with that letter will disappear and the letter will appear.
+- If the letter you pick is incorrect, a body part will be drawn onto the hangman diagram.
+- If you can guess the entire word before all of the hangman body parts are drawn, you win!!
 
-## Installation
-To install the Hangman Game, follow these steps:
+## How to Play
+To play the game, just click [here](https://harrisongearhart.github.io/Hangman-Game/)
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/HarrisonGearhart/Hangman-Game
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd Hangman-Game
-    ```
-
-## Usage
-Run the web app:
-    ```bash
-    xdg-open index.html
-    ```
 
 ## Contributors
-    
-
-## Contact
-
+    [Harrison Gearhart](https://github.com/HarrisonGearhart)
+    [Max Logan](https://github.com/)
+    [Clay Sexton](https://github.com/maxnchief)
