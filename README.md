@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [How to Play](#play)
+- [How to Play](#How-to-Play)
 - [Contributors](#contributors)
 
 ## Introduction
