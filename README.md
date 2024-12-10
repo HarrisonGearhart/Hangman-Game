@@ -2,14 +2,14 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Features](#features)
-- [How to Play](#How-to-Play)
+- [Features](#Game-Instructions)
+- [How to Play](#Game-Link)
 - [Contributors](#contributors)
 
 ## Introduction
 Welcome to the **Hangman Game**! This game is based off of the classic word game, Hangman, but with a travel theme!
 
-## Features
+## Game Instructions
 - Pick between 3 different travel categories.
 - Based off the category selected, a random word will be chosen and each character will be displayed with an underscore.
 - At the same time, a keyboard will appear. This is where you will be guessing each letter of the word.
@@ -18,7 +18,7 @@ Welcome to the **Hangman Game**! This game is based off of the classic word game
 - If the letter you pick is incorrect, a body part will be drawn onto the hangman diagram.
 - If you can guess the entire word before all of the hangman body parts are drawn, you win!!
 
-## How to Play
+## Game Link
 To play the game, just click [here](https://harrisongearhart.github.io/Hangman-Game/)
 
 
