@@ -2,8 +2,8 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Features](#Game-Instructions)
-- [How to Play](#Game-Link)
+- [Game Instructions](#Game-Instructions)
+- [Game Link](#Game-Link)
 - [Contributors](#contributors)
 
 ## Introduction
